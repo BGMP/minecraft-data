@@ -45,7 +45,7 @@ Output:
 Retrieve the name history of a player by it's uuid or username.
 
 ```ruby
-  Minecraft::Data.name_history_of_uuid('BGMP')
+  Minecraft::Data.name_history_of_uuid('2cef6d05-ec9a-44b3-bedc-53359c68ae65')
 ```
 
 Output:
