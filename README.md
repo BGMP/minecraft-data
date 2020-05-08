@@ -2,7 +2,7 @@
 
 Minecraft Data is a dead simple ruby gem to gather different pieces of information related to Minecraft player profiles.
 
-Services:
+Services used:
   * https://github.com/Electroid/mojang-api - User data.
     * https://api.ashcon.app/mojang/v1/user/Notch
   * https://crafatar.com - Skin heads.
