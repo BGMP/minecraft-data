@@ -79,12 +79,8 @@ To install this gem onto your local machine, run `bundle exec rake install`. To 
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at this repo's [issues tab](https://github.com/BGMP/minecraft-data/issues). This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [code of conduct](https://github.com/[USERNAME]/minecraft-data/blob/master/CODE_OF_CONDUCT.md).
+Bug reports and pull requests are welcome at [the repo](https://github.com/BGMP/minecraft-data)!
 
 ## Licence
 
 The gem is available as open source under the terms of the [MIT Licence](https://opensource.org/licenses/MIT).
-
-## Code of Conduct
-
-Everyone interacting in the Minecraft::Data project's codebases, issue trackers, chat rooms and mailing lists is expected to follow the [code of conduct](https://github.com/[USERNAME]/minecraft-data/blob/master/CODE_OF_CONDUCT.md).
