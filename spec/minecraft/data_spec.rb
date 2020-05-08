@@ -20,6 +20,6 @@ RSpec.describe Minecraft::Data do
   end
 
   it 'Tests retrieving a Minecraft skin head url' do
-    expect(Minecraft::Data.head_url_of('069a79f4-44e9-4726-a5be-fca90e38aaf5', true).eql?('https://crafatar.com/avatars/069a79f4-44e9-4726-a5be-fca90e38aaf5'))
+    expect(Minecraft::Data.head_url_of('069a79f4-44e9-4726-a5be-fca90e38aaf5', true, 90).eql?('https://crafatar.com/avatars/069a79f4-44e9-4726-a5be-fca90e38aaf5?overlay&size=90'))
   end
 end

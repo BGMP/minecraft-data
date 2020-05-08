@@ -72,11 +72,11 @@ module Minecraft
         end
       end
 
-      def head_url_of(uuid, overlay)
+      def head_url_of(uuid, overlay, size)
         if overlay
-          "#{HEADS_API}/#{uuid}?overlay"
+          "#{HEADS_API}/#{uuid}?overlay&size=#{size}"
         else
-          "#{HEADS_API}/#{uuid}"
+          "#{HEADS_API}/#{uuid}&size=#{size}"
         end
       end
     end

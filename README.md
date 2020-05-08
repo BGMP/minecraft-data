@@ -61,14 +61,14 @@ Output:
 Retrieves a link pointing to an image of the given user's skin head. `true` or `false` depending on whether you want the skin's overlay to be present or not.
 
 ```ruby
-  Minecraft::Data.head_url_of('069a79f4-44e9-4726-a5be-fca90e38aaf5', true)
-  Minecraft::Data.head_url_of('069a79f4-44e9-4726-a5be-fca90e38aaf5', false)
+  Minecraft::Data.head_url_of('069a79f4-44e9-4726-a5be-fca90e38aaf5', true, 90)
+  Minecraft::Data.head_url_of('069a79f4-44e9-4726-a5be-fca90e38aaf5', false, 180)
 ```
 
 Output:
 ```
-  https://crafatar.com/avatars/2cef6d05-ec9a-44b3-bedc-53359c68ae65?overlay
-  https://crafatar.com/avatars/2cef6d05-ec9a-44b3-bedc-53359c68ae65
+  https://crafatar.com/avatars/2cef6d05-ec9a-44b3-bedc-53359c68ae65?overlay&size=90
+  https://crafatar.com/avatars/2cef6d05-ec9a-44b3-bedc-53359c68ae65?size=180
 ```
 
 ## Development
