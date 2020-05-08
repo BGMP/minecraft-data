@@ -76,7 +76,7 @@ module Minecraft
         if overlay
           "#{HEADS_API}/#{uuid}?overlay&size=#{size}"
         else
-          "#{HEADS_API}/#{uuid}&size=#{size}"
+          "#{HEADS_API}/#{uuid}?size=#{size}"
         end
       end
     end
