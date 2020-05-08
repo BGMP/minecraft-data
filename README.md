@@ -1,12 +1,11 @@
-Minecraft::Data
----
+# Minecraft::Data
 
 Minecraft Data is a dead simple ruby gem to gather different pieces of information related to Minecraft player profiles.
 
 Services:
-   * https://github.com/Electroid/mojang-api - User data.
-     * https://api.ashcon.app/mojang/v1/user/Notch
-   * https://crafatar.com - Skin heads.
+  * https://github.com/Electroid/mojang-api - User data.
+    * https://api.ashcon.app/mojang/v1/user/Notch
+  * https://crafatar.com - Skin heads.
 
 ## Installation
 
@@ -26,7 +25,7 @@ Or install it yourself as:
 
 ## Usage
 
-### `.username_to_uuid()` `.uuid_to_username()`
+#### `.username_to_uuid()` `.uuid_to_username()`
 
 Retrieve the username of a given player uuid and vice versa.
 
@@ -41,7 +40,7 @@ Output:
   069a79f4-44e9-4726-a5be-fca90e38aaf5
 ```
 
-### `.name_history_of_username()` `.name_history_of_uuid()`
+#### `.name_history_of_username()` `.name_history_of_uuid()`
 
 Retrieve the name history of a player by it's uuid or username.
 
@@ -57,7 +56,7 @@ Output:
 {"username"=>"BGMP", "changed_at"=>"2017-10-08T20:11:36.000Z"}
 ```
 
-### `.head_url_of()`
+#### `.head_url_of()`
 
 Retrieves a link pointing to an image of the given user's skin head. `true` or `false` depending on whether you want the skin's overlay to be present or not.
 
