@@ -3,7 +3,7 @@
 Minecraft Data is a dead simple ruby gem to gather different pieces of information related to Minecraft player profiles.
 
 Services used:
-  * https://github.com/Electroid/mojang-api - Minecraft data.
+  * https://github.com/Electroid/mojang-api - API.
     * https://api.ashcon.app/mojang/v2/user/BGMP
     * https://api.ashcon.app/mojang/v2/avatar/BGMP
 
@@ -45,7 +45,7 @@ Notch
 Retrieve the name history of a player by it's uuid or username.
 
 ```ruby
-Minecraft::Data.name_history_of_uuid('BGMP')
+Minecraft::Data.name_history_of_uuid('2cef6d05-ec9a-44b3-bedc-53359c68ae65')
 ```
 
 Output:
