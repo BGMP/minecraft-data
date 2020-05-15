@@ -3,9 +3,9 @@
 Minecraft Data is a dead simple ruby gem to gather different pieces of information related to Minecraft player profiles.
 
 Services used:
-  * https://github.com/Electroid/mojang-api - User data.
-    * https://api.ashcon.app/mojang/v1/user/Notch
-  * https://crafatar.com - Skin heads.
+  * https://github.com/Electroid/mojang-api - Minecraft data.
+    * https://api.ashcon.app/mojang/v2/user/BGMP
+    * https://api.ashcon.app/mojang/v2/avatar/BGMP
 
 ## Installation
 
@@ -30,14 +30,14 @@ Or install it yourself as:
 Retrieve the username of a given player uuid and vice versa.
 
 ```ruby
-  Minecraft::Data.username_to_uuid('069a79f4-44e9-4726-a5be-fca90e38aaf5')
-  Minecraft::Data.uuid_to_username('Notch')
+Minecraft::Data.username_to_uuid('069a79f4-44e9-4726-a5be-fca90e38aaf5')
+Minecraft::Data.uuid_to_username('Notch')
 ```
 
 Output:
 ```
-  Notch
-  069a79f4-44e9-4726-a5be-fca90e38aaf5
+Notch
+069a79f4-44e9-4726-a5be-fca90e38aaf5
 ```
 
 #### `.name_history_of_username()` `.name_history_of_uuid()`
@@ -45,7 +45,7 @@ Output:
 Retrieve the name history of a player by it's uuid or username.
 
 ```ruby
-  Minecraft::Data.name_history_of_uuid('BGMP')
+Minecraft::Data.name_history_of_uuid('BGMP')
 ```
 
 Output:
@@ -56,19 +56,19 @@ Output:
 {"username"=>"BGMP", "changed_at"=>"2017-10-08T20:11:36.000Z"}
 ```
 
-#### `.head_url_of()`
+#### `.head_url_of_uuid()` `.head_url_of_username()`
 
 Retrieves a link pointing to an image of the given user's skin head. `true` or `false` depending on whether you want the skin's overlay to be present or not.
 
 ```ruby
-  Minecraft::Data.head_url_of('069a79f4-44e9-4726-a5be-fca90e38aaf5', true, 90)
-  Minecraft::Data.head_url_of('069a79f4-44e9-4726-a5be-fca90e38aaf5', false, 180)
+Minecraft::Data.head_url_of_uuid('2cef6d05-ec9a-44b3-bedc-53359c68ae65')
+Minecraft::Data.head_url_of_username('BGMP')
 ```
 
 Output:
 ```
-  https://crafatar.com/avatars/2cef6d05-ec9a-44b3-bedc-53359c68ae65?overlay&size=90
-  https://crafatar.com/avatars/2cef6d05-ec9a-44b3-bedc-53359c68ae65?size=180
+https://api.ashcon.app/mojang/v2/avatar/2cef6d05-ec9a-44b3-bedc-53359c68ae65
+https://api.ashcon.app/mojang/v2/avatar/BGMP
 ```
 
 ## Development
