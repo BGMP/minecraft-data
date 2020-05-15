@@ -7,6 +7,7 @@ module Minecraft
     require 'open-uri'
     require 'net/http'
     require 'json'
+    require 'uuidtools'
 
     USERS_API = 'https://api.ashcon.app/mojang/v2/user'.freeze           # https://github.com/Electroid/mojang-api
     HEADS_API = 'https://api.ashcon.app/mojang/v2/avatar'.freeze         # https://github.com/Electroid/mojang-api
