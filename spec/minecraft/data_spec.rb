@@ -16,7 +16,7 @@ RSpec.describe Minecraft::Data do
   end
 
   it 'Tests retrieving a Minecraft name history from a uuid' do
-    expect(Minecraft::Data.name_history_of_username('069a79f4-44e9-4726-a5be-fca90e38aaf5').first.first[1]).to eql('Notch')
+    expect(Minecraft::Data.name_history_of_uuid('069a79f4-44e9-4726-a5be-fca90e38aaf5').first.first[1]).to eql('Notch')
   end
 
   it 'Tests retrieving a Minecraft skin head url from a username' do
