@@ -8,9 +8,9 @@ module Minecraft
     require 'net/http'
     require 'json'
 
-    USERS_API = 'https://api.ashcon.app/mojang/v1/user'.freeze          # https://github.com/Electroid/mojang-api
-    HEADS_API = 'https://crafatar.com/avatars'.freeze                   # https://crafatar.com/
-    STEVE_UUID = '8667ba71-b85a-4004-af54-457a9734eed7'.freeze          # Steve <3
+    USERS_API = 'https://api.ashcon.app/mojang/v2/user'.freeze           # https://github.com/Electroid/mojang-api
+    HEADS_API = 'https://api.ashcon.app/mojang/v2/avatar'.freeze         # https://github.com/Electroid/mojang-api
+    STEVE_UUID = '8667ba71-b85a-4004-af54-457a9734eed7'.freeze           # Steve <3
 
     class Error < RuntimeError; end
 
@@ -72,12 +72,12 @@ module Minecraft
         end
       end
 
-      def head_url_of(uuid, overlay, size)
-        if overlay
-          "#{HEADS_API}/#{uuid}?overlay&size=#{size}"
-        else
-          "#{HEADS_API}/#{uuid}?size=#{size}"
-        end
+      def head_url_of_uuid(uuid)
+        "#{HEADS_API}/#{uuid}"
+      end
+
+      def head_url_of_username(username)
+        "#{HEADS_API}/#{username}"
       end
     end
   end
