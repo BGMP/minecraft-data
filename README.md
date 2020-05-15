@@ -12,7 +12,7 @@ Services used:
 Add this line to your application's Gemfile:
 
 ```ruby
-gem 'minecraft-data'
+gem 'minecraft-data', '~> 0.2.0'
 ```
 
 And then execute:
