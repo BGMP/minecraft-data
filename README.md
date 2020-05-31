@@ -30,14 +30,14 @@ Or install it yourself as:
 Retrieve the username of a given player uuid and vice versa.
 
 ```ruby
-Minecraft::Data.username_to_uuid('069a79f4-44e9-4726-a5be-fca90e38aaf5')
-Minecraft::Data.uuid_to_username('Notch')
+Minecraft::Data.username_to_uuid('Notch')
+Minecraft::Data.uuid_to_username('069a79f4-44e9-4726-a5be-fca90e38aaf5')
 ```
 
 Output:
 ```
-Notch
 069a79f4-44e9-4726-a5be-fca90e38aaf5
+Notch
 ```
 
 #### `.name_history_of_username()` `.name_history_of_uuid()`
