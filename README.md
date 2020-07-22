@@ -92,7 +92,7 @@ To install this gem onto your local machine, run `bundle exec rake install`. To 
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at this repo's [issues tab](https://github.com/BGMP/minecraft-data/issues). This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [code of conduct](https://github.com/[USERNAME]/minecraft-data/blob/master/CODE_OF_CONDUCT.md).
+Bug reports are welcome on GitHub at this repo's [issues tab](https://github.com/BGMP/minecraft-data/issues). This project is intended to be a safe, welcoming space for collaboration, thus I'm absolutely open to any changes to be submitted through a pull request [here](https://github.com/BGMP/minecraft-data/pulls)!
 
 ## Licence
 
