@@ -30,14 +30,14 @@ Or install it yourself as:
 Retrieve the username of a given player uuid and vice versa.
 
 ```ruby
-Minecraft::Data.username_to_uuid('069a79f4-44e9-4726-a5be-fca90e38aaf5')
-Minecraft::Data.uuid_to_username('Notch')
+Minecraft::Data.username_to_uuid('Notch')
+Minecraft::Data.uuid_to_username('069a79f4-44e9-4726-a5be-fca90e38aaf5')
 ```
 
 Output:
 ```
-Notch
 069a79f4-44e9-4726-a5be-fca90e38aaf5
+Notch
 ```
 
 #### `.name_history_of_username()` `.name_history_of_uuid()`
@@ -92,12 +92,8 @@ To install this gem onto your local machine, run `bundle exec rake install`. To 
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at this repo's [issues tab](https://github.com/BGMP/minecraft-data/issues). This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [code of conduct](https://github.com/[USERNAME]/minecraft-data/blob/master/CODE_OF_CONDUCT.md).
+Bug reports are welcome on GitHub at this repo's [issues tab](https://github.com/BGMP/minecraft-data/issues). This project is intended to be a safe, welcoming space for collaboration, thus I'm absolutely open to any changes to be submitted through a pull request [here](https://github.com/BGMP/minecraft-data/pulls)!
 
 ## Licence
 
 The gem is available as open source under the terms of the [MIT Licence](https://opensource.org/licenses/MIT).
-
-## Code of Conduct
-
-Everyone interacting in the Minecraft::Data project's codebases, issue trackers, chat rooms and mailing lists is expected to follow the [code of conduct](https://github.com/[USERNAME]/minecraft-data/blob/master/CODE_OF_CONDUCT.md).
